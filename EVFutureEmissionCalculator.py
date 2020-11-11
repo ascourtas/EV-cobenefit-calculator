@@ -4,6 +4,7 @@ import numpy as np  #allows for higher level math functions
 import seaborn as sns  #makes figures more organized
 sns.set()  #apply seaborn basics
 
+# TODO: remove all absolute paths
 AZNM = xlrd.open_workbook('/projects/b1045/EVTool/AZNM.xlsx')  #files with future data for each type of power generation by egrid
 CAMX = xlrd.open_workbook('/projects/b1045/EVTool/CAMX.xlsx')
 ERCT = xlrd.open_workbook('/projects/b1045/EVTool/ERCT.xlsx')

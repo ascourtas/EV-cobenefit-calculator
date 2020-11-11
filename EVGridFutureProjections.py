@@ -6,7 +6,7 @@ import pandas as pd
 import seaborn as sns
 sns.set()
 
-
+# TODO: change all hardcoded absolute paths
 #read all the excels
 AZNM = xlrd.open_workbook('/projects/b1045/EVTool/AZNM.xlsx')
 CAMX = xlrd.open_workbook('/projects/b1045/EVTool/CAMX.xlsx')
@@ -79,6 +79,7 @@ global endEnter
 def getgrid():
     #create empty list which will get all the percents later in the function
     vList=[]
+    # TODO: change path
     zipGrids = xlrd.open_workbook('/projects/b1045/EVTool/zipGrid.xlsx')
     #set variable sheet as the 5th sheet in the zipGrid file
     sheet = zipGrids.sheet_by_index(4)
@@ -91,6 +92,7 @@ def getgrid():
             #set eGRID value to the 4th column of the same row which was looped into with the code above
             eGRID = row_value[3]
 
+    # TODO: change path
     energyCalc = xlrd.open_workbook('/projects/b1045/EVTool/energyCalculations.xlsx')
     #set variable for the exact sheet in the energyCalculations excel file
     carbonDioxCalc = energyCalc.sheet_by_index(0)
